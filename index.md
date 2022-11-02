@@ -461,10 +461,10 @@ We will use this <a href="{{ page.collaborative_notes }}">collaborative document
 SURVEYS - DO NOT EDIT SURVEY LINKS
 {% endcomment %}
 <h2 id="surveys">Surveys</h2>
-<p>There will then be a weekly post-session survey to collect your feedback
+<p>There will then be a post-course survey to collect your feedback
 about how the sessions went.</p>
 {% if site.carpentry == "incubator" %}
-<p><a href="{{ site.incubator_post_survey }}">Weekly Post-session Survey</a></p>
+<p><a href="{{ site.incubator_post_survey }}">Post-course Survey</a></p>
 {% elsif site.incubator_pre_survey or site.incubator_post_survey %}
 <div class="alert alert-danger">
 WARNING: you have defined custom pre- and/or post-survey links for
