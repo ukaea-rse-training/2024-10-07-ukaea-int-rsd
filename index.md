@@ -344,9 +344,9 @@ will be limited.
 >    WSL):
 >
 >    ```bash
->    wget https://download.jetbrains.com/python/pycharm-professional-2022.2.3.tar.gz
+>    wget https://download.jetbrains.com/python/pycharm-community-2022.2.3.tar.gz
 >    sudo tar xzf pycharm-*.tar.gz -C /opt/
->    alias pycharm=/opt/pycharm-community-2021.3.1/bin/pycharm.sh  # Put this into .bashrc
+>    alias pycharm=/opt/pycharm-community-2022.2.3/bin/pycharm.sh  # Put this into .bashrc
 >    pycharm
 >    ```
 >
