@@ -331,7 +331,8 @@ will be limited.
 >
 > 1. Follow [the instructions to install
 >    WSL2](https://intranet.ukaea.uk/software/guides/wsl2.html) on your UKAEA
->    laptop if you don't already have it.
+>    laptop if you don't already have it. You do not need to use one of the pre-built distributions.
+>    Just use the Ubuntu distribution from the Windows Store.
 > 2. Follow [the link at the bottom of that
 >    guide](https://code.visualstudio.com/docs/remote/wsl) to get VS Code
 >    connected to WSL2. Within WSL2, we recommend you work within the default
