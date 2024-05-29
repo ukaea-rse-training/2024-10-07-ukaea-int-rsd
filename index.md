@@ -9,14 +9,14 @@ country: "GB"      # lowercase two-letter ISO country code such as "fr" (see htt
 language: "English"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the workshop
 latitude: 51.65713      # decimal latitude of workshop venue (use https://www.latlong.net/)
 longitude: -1.23002     # decimal longitude of the workshop venue (use https://www.latlong.net)
-humandate: "9, 10, 16, 17, 23, 24 November  2023"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "13:00 - 16:30 (UTC+1)"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
-startdate: 2023-11-09      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: 2023-11-24        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Matthew Bluteau", "Thomas Kiley"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Thomas Clayton", "Sanket Gadgil", "Kirill Palamartchouk"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+humandate: "3, 4, 12, 13, 20, 21 June 2024"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "13:00 - 16:30 BST (UTC+1)"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
+startdate: 2024-06-03      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2024-06-21
+instructor: ["Matthew Bluteau", "Jez Swann", "Kristian Zarebski", "Harry Saunders", "Kingsley Collie"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Charlie Boswell", "Sanket Gadgil"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["matthew.bluteau@ukaea.uk"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-collaborative_notes: "https://codimd.carpentries.org/ukaea-int-rse-20231109" # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
+collaborative_notes: "COMING SOON" # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
@@ -309,23 +309,28 @@ please preview your site before committing, and make sure to run
 {% elsif site.carpentry == "lc" %}
 {% include lc/setup.html %}
 {% elsif site.carpentry == "incubator" %}
-All non-Windows users, please check the "Setup" page of
-[the lesson site]({{ site.incubator_lesson_site }}setup) for instructions to follow
-to obtain the software and data you will need to follow the lesson. For Windows
-users, please see the note below. We recommend that you use your work laptop for
-the course and run the software required directly on that. We appreciate that
-some participants will work on Linux clusters on a regular basis (e.g. freia,
-heimdall, cumulus) and will therefore want to do the course work from there.
-Whilst this is possible, the overhead to get this working for everyone has
-proven to be too much in the short time allotted for the course. If you are
-already set up on one of these clusters with a functioning IDE connected
-remotely, then please do feel free to use that, but be aware our support for you
-will be limited.
+All non-Windows users, please check the note below about IDEs,
+then head to the "Setup" page of [the lesson site]({{ site.incubator_lesson_site }}setup)
+for instructions to follow to obtain the software and data you will need to follow the lesson.
+For Windows users, please see the note immediately below.
+We recommend that you use your work laptop for the course and run the software required directly on that.
+
+We appreciate that some participants will work on Linux clusters on a regular basis
+(e.g. freia, heimdall, cumulus) and will therefore want to do the course work from there.
+Whilst this is possible,
+the Python installation on these clusters is not in a suitable state for the course.
+We have frequently run into problems trying to complete the course content in these environments.
+**Therefore, we strongly discourage you from using one of these clusters at this time.**
+If you still wilfully choose to work on a cluster, please be aware our support for you will be
+limited.[^1]
+
+[^1]: There is ongoing work to improve the Python installation on UKAEA clusters,
+      so we hope it will soon be possible to offer this as a viable option again.
 
 >## Some notes for UKAEA Windows users
 >
 > It has been our experience that installing GitBash as recommended in the
-> course setup is a suboptimal solution. Instead, learners have had much less
+> course setup is not a workable option. Instead, learners have had much less
 > trouble if they use WSL (Windows Subsytem for Linux) and connect the VS Code
 > IDE to that. We therefore recommend the following setup steps:
 >
@@ -343,9 +348,9 @@ will be limited.
 >    within WSL and launch it from there:
 >
 >    ```bash
->    wget https://download.jetbrains.com/python/pycharm-community-2023.1.tar.gz
+>    wget https://download.jetbrains.com/python/pycharm-community-2024.1.1.tar.gz
 >    sudo tar xzf pycharm-*.tar.gz -C /opt/
->    alias pycharm=/opt/pycharm-community-2023.1/bin/pycharm.sh  # Put this into .bashrc
+>    alias pycharm=/opt/pycharm-community-2024.1.1/bin/pycharm.sh  # Put this into .bashrc
 >    pycharm
 >    ```
 >
