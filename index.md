@@ -9,14 +9,14 @@ country: "GB"      # lowercase two-letter ISO country code such as "fr" (see htt
 language: "English"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the workshop
 latitude: 51.65713      # decimal latitude of workshop venue (use https://www.latlong.net/)
 longitude: -1.23002     # decimal longitude of the workshop venue (use https://www.latlong.net)
-humandate: "3, 4, 12, 13, 20, 21 June 2024"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "13:00 - 16:30 BST (UTC+1)"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
-startdate: 2024-06-03      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: 2024-06-21
-instructor: ["Matthew Bluteau", "Jez Swann", "Kristian Zarebski", "Harry Saunders", "Kingsley Collie"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Charlie Boswell", "Sanket Gadgil"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-email: ["matthew.bluteau@ukaea.uk"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-collaborative_notes: "COMING SOON" # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
+humandate: "7, 8, 14, 15, 21, 22 October 2024"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "13:00 - 16:30 BST"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
+startdate: 2024-10-07      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2024-10-22
+instructor: ["Jez Swann", "Kristian Zarebski", "Thomas Kiley", "Kingsley Collie", "James Panayis", "Harry Saunders"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Sanket Gadgil", "Emilijus Miniauskas", "Thomas Clayton"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+email: ["jez.swann@ukaea.uk", "kristian.zarebski@ukaea.uk"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+collaborative_notes: "https://codimd.carpentries.org/ukaea-int-rse-20241007" # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
